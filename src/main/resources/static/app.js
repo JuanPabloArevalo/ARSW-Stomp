@@ -61,6 +61,7 @@ var app = (function () {
             stompClient.send("/topic/newpoint", {}, JSON.stringify(pt));
         },
 
+
         disconnect: function () {
             if (stompClient !== null) {
                 stompClient.disconnect();
